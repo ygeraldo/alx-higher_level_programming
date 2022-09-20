@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for c in range(ord('a'), ord('z') + 1):
-    if c == ord('e') or c == ord('q'):
-        continue
-    print("{:c}".format(c), end="")
+
+for i in range(26):
+    if chr(97 + i) != 'q' and chr(97 + i) != 'e':
+        print("{}".format(chr(97 + i)), end="")
